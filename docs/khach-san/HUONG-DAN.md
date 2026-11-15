@@ -9,3 +9,9 @@ Trang tĩnh, không cần cài đặt. Mọi nội dung nằm trong `hotel.js`.
 5. **Khi đã thay hết bằng nội dung thật:** đổi `sample: true` thành `sample: false`, và trong `credits.js` đổi thành `window.CREDITS = [];` (xoá ảnh minh hoạ trong `img/`).
 
 Ảnh minh hoạ hiện tại lấy từ Wikimedia Commons (giấy phép CC), nguồn ghi trong `credits.js` và cuối trang.
+
+## Hiệu ứng cuộn "đi một vòng khách sạn"
+- Mặc định trang mở ở chế độ cuộn: mỗi nhóm là một trạm với một ảnh toàn màn hình.
+- Ảnh của từng trạm: `heroStill` (trạm đầu), `still` trong từng mục của `categories`, `whereStill` (trạm vị trí). Nên dùng ảnh ngang, đẹp nhất của khu đó, rộng 1920px.
+- Người xem có thể bấm "Xem dạng danh sách" để xem kiểu trang thường; máy bật "giảm chuyển động" cũng tự xem dạng danh sách.
+- Code hiệu ứng nằm trong `bench.js`.

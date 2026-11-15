@@ -19,6 +19,9 @@ window.HOTEL = {
   email: "booking@example.com",
   mapQuery: "Hoi An Ancient Town",
   heroImages: ["hero-1.jpg", "hero-2.jpg", "hero-3.jpg"],
+  // Ảnh toàn màn hình cho từng trạm khi cuộn (máy quay dừng ở đây)
+  heroStill: "hero-1.jpg",
+  whereStill: "hero-3.jpg",
   facts: [
     { icon: "clock", vi: "Nhận phòng 14:00 · Trả phòng 12:00", en: "Check-in 14:00 · Check-out 12:00" },
     { icon: "walk", vi: "5 phút đi bộ tới phố cổ", en: "5 min walk to the old town" },
@@ -26,10 +29,10 @@ window.HOTEL = {
     { icon: "car", vi: "Đón sân bay Đà Nẵng", en: "Da Nang airport pickup" }
   ],
   categories: [
-    { id: "phong", vi: "Phòng nghỉ", en: "Rooms", note: { vi: "24 phòng, 4 hạng phòng", en: "24 rooms, 4 room types" } },
-    { id: "am-thuc", vi: "Ẩm thực", en: "Dining", note: { vi: "Bữa sáng và nhà hàng", en: "Breakfast and restaurant" } },
-    { id: "thu-gian", vi: "Thư giãn", en: "Relax", note: { vi: "Hồ bơi, spa, quầy bar", en: "Pool, spa, bar" } },
-    { id: "dich-vu", vi: "Dịch vụ & trải nghiệm", en: "Services & experiences", note: { vi: "Đưa đón, xe đạp, tour", en: "Transfers, bikes, tours" } }
+    { id: "phong", still: "suite-1.jpg", vi: "Phòng nghỉ", en: "Rooms", note: { vi: "24 phòng, 4 hạng phòng", en: "24 rooms, 4 room types" } },
+    { id: "am-thuc", still: "restaurant-1.jpg", vi: "Ẩm thực", en: "Dining", note: { vi: "Bữa sáng và nhà hàng", en: "Breakfast and restaurant" } },
+    { id: "thu-gian", still: "hero-2.jpg", vi: "Thư giãn", en: "Relax", note: { vi: "Hồ bơi, spa, quầy bar", en: "Pool, spa, bar" } },
+    { id: "dich-vu", still: "tour-1.jpg", vi: "Dịch vụ & trải nghiệm", en: "Services & experiences", note: { vi: "Đưa đón, xe đạp, tour", en: "Transfers, bikes, tours" } }
   ],
   items: [
     {

@@ -190,8 +190,10 @@
     renderStatic(); renderStations();
     document.querySelectorAll(".station, #vi-tri").forEach((s) => io.observe(s));
     if (!panel.hidden) { const x = H.items.find((i) => i.id === panel.dataset.id); if (x) openPanel(x); }
+    window.KS = { H, t, u, ic, img, tel, esc, lang, zalo: zaloLink(), setLang: (l) => { lang = l; store.set("ks-lang", l); renderAll(); } };
+    document.dispatchEvent(new Event("ks:render"));
   }
-  $("#lang").addEventListener("click", () => { lang = lang === "vi" ? "en" : "vi"; store.set("ks-lang", lang); renderAll(); });
+  $("#lang").addEventListener("click", () => window.KS.setLang(lang === "vi" ? "en" : "vi"));
 
   renderHero();
   renderAll();

@@ -16,7 +16,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>(function(){var h=document.documentElement,m=false;try{m=localStorage.getItem("ks-view")==="list"}catch(e){}if(!m&&!matchMedia("(prefers-reduced-motion: reduce)").matches)h.classList.add("film")})()</script>
   <div id="sample" class="sample" hidden></div>
+
+  <div id="bench" class="bench" aria-label="Đi một vòng khách sạn"></div>
+
+  <div class="stack-only">
 
   <header class="hero" id="top">
     <div class="hero-img" id="hero-img"></div>
@@ -50,8 +55,11 @@
     </div>
   </section>
 
+  </div>
+
   <footer class="wrap foot">
     <div id="foot-name"></div>
+    <div><button id="to-film" class="ghost" type="button">Xem dạng đi một vòng khách sạn</button></div>
     <details><summary id="credits-title"></summary><ul id="credits"></ul></details>
   </footer>
 
@@ -69,5 +77,6 @@
   <script src="hotel.js"></script>
   <script src="credits.js"></script>
   <script src="app.js"></script>
+  <script src="bench.js"></script>
 </body>
 </html>
