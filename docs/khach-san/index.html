@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lam Hà Boutique Hotel · Phòng và dịch vụ</title>
+  <meta name="description" content="Xem hình ảnh phòng nghỉ, ẩm thực và dịch vụ của khách sạn, đặt phòng nhanh qua Zalo hoặc điện thoại.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lam Hà Boutique Hotel · Phòng và dịch vụ">
+  <meta property="og:description" content="Xem hình ảnh phòng nghỉ, ẩm thực và dịch vụ. Đặt phòng nhanh qua Zalo.">
+  <meta property="og:image" content="img/hero-1.jpg">
+  <meta name="theme-color" content="#1f3d36">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="sample" class="sample" hidden></div>
+
+  <header class="hero" id="top">
+    <div class="hero-img" id="hero-img"></div>
+    <div class="hero-shade"></div>
+    <div class="topbar wrap">
+      <span class="brand" id="brand"></span>
+      <button id="lang" class="pill" type="button" aria-label="Đổi ngôn ngữ">EN</button>
+    </div>
+    <div class="hero-text wrap">
+      <p class="eyebrow" id="h-loc"></p>
+      <h1 id="h-name"></h1>
+      <p class="tagline" id="h-tag"></p>
+      <div class="hero-cta" id="hero-cta"></div>
+    </div>
+  </header>
+
+  <section class="facts wrap" id="facts"></section>
+  <section class="intro wrap"><p id="intro"></p></section>
+
+  <nav class="bar" aria-label="Mục lục">
+    <div class="wrap chips" id="chips"></div>
+  </nav>
+
+  <main id="stations"></main>
+
+  <section class="wrap where" id="vi-tri">
+    <div class="station-head"><span class="station-no" id="where-no"></span><h2 id="where-title"></h2></div>
+    <div class="where-grid">
+      <div class="map"><iframe id="map" title="Bản đồ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="contact" id="contact"></div>
+    </div>
+  </section>
+
+  <footer class="wrap foot">
+    <div id="foot-name"></div>
+    <details><summary id="credits-title"></summary><ul id="credits"></ul></details>
+  </footer>
+
+  <div class="dock" id="dock"></div>
+
+  <div id="panel" class="panel" hidden>
+    <div class="panel-backdrop" data-close></div>
+    <article class="panel-card" role="dialog" aria-modal="true" aria-labelledby="p-title">
+      <button class="close" type="button" data-close aria-label="Đóng">×</button>
+      <div id="p-body"></div>
+    </article>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="hotel.js"></script>
+  <script src="credits.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
