@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xưởng Phong Cách · Thư viện phong cách video AI</title>
+  <meta name="description" content="Thư viện phong cách làm video AI: mỗi phong cách có ảnh mẫu, mô tả, lời nhắc vẽ ảnh và lời nhắc tạo video. Gõ chủ đề của bạn, sao chép lời nhắc và làm ngay.">
+  <meta property="og:title" content="Xưởng Phong Cách · Thư viện phong cách video AI">
+  <meta property="og:description" content="Chọn phong cách, gõ chủ đề, sao chép lời nhắc vẽ ảnh và tạo video.">
+  <meta property="og:image" content="img/ga-ke-su.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Thư viện phong cách video AI</p>
+      <h1>Xưởng <em>Phong Cách</em></h1>
+      <p class="lede">Mỗi phong cách là một trạm: xem ảnh mẫu, đọc nó hợp với nội dung gì, rồi sao chép lời nhắc vẽ ảnh và lời nhắc tạo video. Gõ chủ đề của bạn một lần, mọi lời nhắc tự điền theo.</p>
+      <label class="topic">
+        <span>Video của bạn nói về</span>
+        <input id="topic" type="text" placeholder="ví dụ: Trần Quốc Toản bóp nát quả cam ở hội nghị Bình Than" autocomplete="off">
+      </label>
+      <div class="hero-meta"><span id="count"></span> · <a href="#cach-dung">Cách dùng</a></div>
+    </div>
+  </header>
+
+  <nav class="bar" aria-label="Lọc phong cách">
+    <div class="wrap bar-inner">
+      <input id="search" type="search" placeholder="Tìm phong cách: lịch sử, thiếu nhi, giáo dục…" aria-label="Tìm phong cách">
+      <div id="chips" class="chips" role="tablist"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="stations"></main>
+
+  <section class="wrap howto" id="cach-dung">
+    <h2>Cách dùng</h2>
+    <ol>
+      <li><b>Chọn phong cách.</b> Lướt theo nhóm hoặc gõ từ khoá vào ô tìm kiếm.</li>
+      <li><b>Gõ chủ đề</b> ở ô trên cùng. Lời nhắc trong mọi phong cách tự điền chủ đề của bạn.</li>
+      <li><b>Vẽ ảnh:</b> sao chép lời nhắc vẽ ảnh, dán vào ChatGPT, Gemini hoặc Midjourney. Vẽ ảnh mẫu nhân vật trước, các cảnh sau đính kèm lại ảnh đó.</li>
+      <li><b>Tạo video:</b> đưa ảnh vào Kling, Seedance, Veo, Hailuo hoặc Runway (chế độ ảnh thành video), dán lời nhắc video.</li>
+      <li><b>Dựng:</b> ghép cảnh, giọng đọc, phụ đề và nhạc trong CapCut.</li>
+    </ol>
+  </section>
+
+  <footer class="wrap foot">
+    <span>Xưởng Phong Cách · lấy cảm hứng từ dạng thư viện phong cách của Lemo-Opuscar.</span>
+    <button id="theme" class="ghost" type="button" aria-label="Đổi giao diện sáng/tối">◐ Giao diện</button>
+  </footer>
+
+  <div id="panel" class="panel" hidden>
+    <div class="panel-backdrop" data-close></div>
+    <article class="panel-card" role="dialog" aria-modal="true" aria-labelledby="p-title">
+      <button class="close" type="button" data-close aria-label="Đóng">×</button>
+      <div id="p-body"></div>
+    </article>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="styles.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
